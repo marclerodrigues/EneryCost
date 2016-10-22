@@ -32,18 +32,20 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
   ```
 
 Ex:
+
   For a 9.000 BTU Device, it uses 142.288 kWh/month, here the energy costs R$ 0.701574/kWh
 
   ```elixir
   EnergyCost.cost(142.288, 0.701574) # => 99.82
   ```
 
-  Or if you used only for a part of the month you can use cost/3 to supply the number of days used.
+  Or if you used only for a part of the month you can use cost/3 and supply the number of days used as the last param.
 
   ```elixir
   EnergyCost.cost(kWh_worn, kWh_price, total_days)
   ```
 Ex:
+
   The same equipment as the last example, at the same area but used just 15 days during the month.
   
   ```elixir
