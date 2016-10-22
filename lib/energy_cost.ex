@@ -1,0 +1,2 @@
+defmodule EnergyCost do
+end
